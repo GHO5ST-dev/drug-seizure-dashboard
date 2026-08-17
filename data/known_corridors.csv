@@ -1,0 +1,19 @@
+corridor_name,hop_order,state,latitude,longitude,primary_drug_types,source_context
+Golden Crescent Route,1,Punjab,31.15,75.34,"Heroin, Opium","Land border entry via Punjab/Rajasthan, onward via road/port"
+Golden Crescent Route,2,Rajasthan,27.02,74.22,"Heroin, Opium","Land border entry via Punjab/Rajasthan, onward via road/port"
+Golden Crescent Route,3,Gujarat,22.26,71.19,"Heroin, Opium","Land border entry via Punjab/Rajasthan, onward via road/port"
+Golden Crescent Route,4,Maharashtra,19.75,75.71,"Heroin, Opium","Land border entry via Punjab/Rajasthan, onward via road/port"
+Golden Triangle Route,1,Manipur,24.66,93.91,"Heroin, Methamphetamine","Land border entry via Manipur/Mizoram, onward via Assam"
+Golden Triangle Route,2,Mizoram,23.16,92.94,"Heroin, Methamphetamine","Land border entry via Manipur/Mizoram, onward via Assam"
+Golden Triangle Route,3,Assam,26.2,92.94,"Heroin, Methamphetamine","Land border entry via Manipur/Mizoram, onward via Assam"
+Golden Triangle Route,4,West Bengal,22.99,87.86,"Heroin, Methamphetamine","Land border entry via Manipur/Mizoram, onward via Assam"
+Southern Maritime Route,1,Kerala,10.85,76.27,"Hashish, Cocaine",Maritime entry via southern coastline
+Southern Maritime Route,2,Tamil Nadu,11.13,78.66,"Hashish, Cocaine",Maritime entry via southern coastline
+Southern Maritime Route,3,Andhra Pradesh,15.91,79.74,"Hashish, Cocaine",Maritime entry via southern coastline
+Northern Route,1,Jammu and Kashmir,33.78,76.58,"Charas/Hashish, Heroin",Land route from northern border areas toward NCR
+Northern Route,2,Punjab,31.15,75.34,"Charas/Hashish, Heroin",Land route from northern border areas toward NCR
+Northern Route,3,Haryana,29.06,76.09,"Charas/Hashish, Heroin",Land route from northern border areas toward NCR
+Northern Route,4,Delhi,28.7,77.1,"Charas/Hashish, Heroin",Land route from northern border areas toward NCR
+Western Maritime Route,1,Gujarat,22.26,71.19,"Methamphetamine, MDMA","Coastal entry via Gujarat, onward to synthetic drug production hubs"
+Western Maritime Route,2,Rajasthan,27.02,74.22,"Methamphetamine, MDMA","Coastal entry via Gujarat, onward to synthetic drug production hubs"
+Western Maritime Route,3,Madhya Pradesh,22.97,78.66,"Methamphetamine, MDMA","Coastal entry via Gujarat, onward to synthetic drug production hubs"
