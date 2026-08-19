@@ -5,10 +5,10 @@ import numpy as np
 from utils.data_loader import load_seizures, load_population
 from utils.styling import inject_base_css, page_header, PLOTLY_TEMPLATE, COLOR_SEQUENCE
 
-st.set_page_config(page_title="Population Correlation", page_icon="📊", layout="wide")
+st.set_page_config(page_title="Population Correlation", layout="wide")
 inject_base_css()
 page_header(
-    "📊 Seizure Activity vs. Population Correlation",
+    "Seizure Activity vs. Population Correlation",
     "Normalizes enforcement activity by population to reveal under- and over-policed states.",
 )
 
