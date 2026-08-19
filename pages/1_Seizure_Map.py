@@ -7,10 +7,10 @@ from utils.data_loader import load_seizures, load_known_corridors, get_state_coo
 from utils.route_analysis import infer_routes, attach_coords
 from utils.styling import inject_base_css, page_header, PLOTLY_TEMPLATE, COLOR_SEQUENCE
 
-st.set_page_config(page_title="Seizure Map & Trends", page_icon="🗺️", layout="wide")
+st.set_page_config(page_title="Seizure Map & Trends", layout="wide")
 inject_base_css()
 page_header(
-    "🗺️ Interactive Seizure Map & Temporal Trends",
+    "Interactive Seizure Map & Temporal Trends",
     "Geographic hotspots across states/districts, with enforcement-gap indicators over time.",
 )
 
@@ -41,7 +41,7 @@ st.caption(f"Showing **{len(filtered):,}** seizure records matching filters.")
 # ---------------------------------------------------------------------
 # Route overlay controls
 # ---------------------------------------------------------------------
-st.subheader("🧭 Trafficking Route Overlay")
+st.subheader("Trafficking Route Overlay")
 r1, r2, r3 = st.columns([1.2, 1.2, 1.6])
 with r1:
     show_known = st.checkbox("Show known trafficking corridors", value=True)
