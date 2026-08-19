@@ -8,6 +8,7 @@ pages = [
     st.Page("pages/3_Trade_Finance_Analysis.py", title="Trade Finance Analysis"),
     st.Page("pages/4_Drug_Type_Distribution.py", title="Drug Type Distribution"),
     st.Page("pages/5_Population_Correlation.py", title="Population Correlation"),
+    st.Page("pages/6_Trafficking_Input.py", title="Trafficking Intelligence Input"),
 ]
 
 pg = st.navigation(pages)
