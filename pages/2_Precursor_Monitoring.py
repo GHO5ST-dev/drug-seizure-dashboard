@@ -6,10 +6,10 @@ import numpy as np
 from utils.data_loader import load_precursor_imports
 from utils.styling import inject_base_css, page_header, PLOTLY_TEMPLATE, COLOR_SEQUENCE
 
-st.set_page_config(page_title="Precursor Monitoring", page_icon="🧪", layout="wide")
+st.set_page_config(page_title="Precursor Monitoring", layout="wide")
 inject_base_css()
 page_header(
-    "🧪 Precursor Chemical Import Monitoring",
+    "Precursor Chemical Import Monitoring",
     "Statistical anomaly detection on precursor chemical imports — spikes can indicate expansion in illicit drug production.",
 )
 
@@ -113,6 +113,5 @@ st.info(
     "Methodology: a shipment is statistically flagged when its monthly import volume for a "
     "given chemical deviates by more than the selected z-score threshold from that chemical's "
     "historical mean. This surfaces *unusual* spikes for manual investigation — it is not, by "
-    "itself, proof of diversion.",
-    icon="ℹ️",
+    "itself, proof of diversion."
 )
