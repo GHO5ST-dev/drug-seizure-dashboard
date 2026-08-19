@@ -7,18 +7,17 @@ import plotly.graph_objects as go
 from utils.data_loader import load_trade_finance
 from utils.styling import inject_base_css, page_header, PLOTLY_TEMPLATE, COLOR_SEQUENCE
 
-st.set_page_config(page_title="Trade Finance Analysis", page_icon="💰", layout="wide")
+st.set_page_config(page_title="Trade Finance Analysis", layout="wide")
 inject_base_css()
 page_header(
-    "💰 Trade Finance & Money Laundering Route Analysis",
+    "Trade Finance & Money Laundering Route Analysis",
     "Identifies high-risk transaction patterns across states consistent with layering/laundering.",
 )
 
 st.warning(
     "**This module uses SIMULATED transaction data** for demonstration purposes only. "
     "No real account or personal data is used. Replace `data/trade_finance.csv` with a "
-    "verified, lawfully-obtained dataset before any operational use.",
-    icon="⚠️",
+    "verified, lawfully-obtained dataset before any operational use."
 )
 
 df = load_trade_finance()
