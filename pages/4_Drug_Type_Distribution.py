@@ -4,10 +4,10 @@ import plotly.express as px
 from utils.data_loader import load_seizures
 from utils.styling import inject_base_css, page_header, PLOTLY_TEMPLATE, COLOR_SEQUENCE
 
-st.set_page_config(page_title="Drug Type Distribution", page_icon="💊", layout="wide")
+st.set_page_config(page_title="Drug Type Distribution", layout="wide")
 inject_base_css()
 page_header(
-    "💊 Drug Type Distribution Analysis",
+    "Drug Type Distribution Analysis",
     "Composition of seized substances by type, geography, and time — informs targeted interdiction strategy.",
 )
 
