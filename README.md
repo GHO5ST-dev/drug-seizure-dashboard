@@ -16,13 +16,15 @@ patterns, drug-type trends, and population-normalized policing gaps.
 
 ```
 drug-seizure-dashboard/
-├── app.py                              # Home page: KPIs + overview
+├── app.py                              # Streamlit entry point and navigation
+├── Dashboard.py                        # Home page: KPIs + overview
 ├── pages/
 │   ├── 1_🗺️_Seizure_Map.py             # Module 1: geo hotspots + temporal trend
 │   ├── 2_🧪_Precursor_Monitoring.py     # Module 2: precursor import anomaly detection
 │   ├── 3_💰_Trade_Finance_Analysis.py   # Module 3: money-laundering route analysis
 │   ├── 4_💊_Drug_Type_Distribution.py   # Module 4: drug type composition & trend
-│   └── 5_📊_Population_Correlation.py   # Module 5: seizures vs. population
+│   ├── 5_📊_Population_Correlation.py   # Module 5: seizures vs. population
+│   └── 6_Trafficking_Input.py          # Module 6: analyst-entered route observations
 ├── utils/
 │   ├── data_loader.py                  # Central cached data-access layer
 │   └── styling.py                      # Shared theme / CSS helpers
@@ -31,7 +33,8 @@ drug-seizure-dashboard/
 │   ├── seizures.csv
 │   ├── precursor_imports.csv
 │   ├── trade_finance.csv
-│   └── state_population.csv
+│   ├── state_population.csv
+│   └── trafficking_reports.csv          # Local analyst input; ignored by Git when created
 ├── .streamlit/config.toml              # Theme config
 ├── requirements.txt
 └── README.md
@@ -69,6 +72,7 @@ The app opens at `http://localhost:8501`. Navigate between modules using the sid
 | 3 | **Trade Finance Analysis** | Risk-scores simulated financial transactions and visualizes flagged inter-state transaction networks to surface potential laundering routes. |
 | 4 | **Drug Type Distribution** | Breaks down seizure composition by drug type — pie/bubble views, trend over time, and a state × drug-type heatmap. |
 | 5 | **Population Correlation** | Normalizes seizure volume/incidents by state population to highlight potential over-/under-policed states, with a correlation coefficient and OLS trendline. |
+| 6 | **Trafficking Intelligence Input** | Captures anonymized dealer aliases, route stops, destinations, transport details, confidence, and case status for local analyst review. |
 
 ---
 
